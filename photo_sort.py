@@ -28,6 +28,11 @@ def photo_regex(file_name):
     pattern = re.compile(r"\d\d\d\d\d\d\d\d_\d\d\d\d\d\d\.jpg", re.IGNORECASE)
     return pattern.match(file_name)
 
+<<<<<<< HEAD
+=======
+files_moved = 0
+
+>>>>>>> 5a5dab6 (added total operations done)
 #print(os.listdir(cwd))
 # begin looping through all files inside of cwd.
 for file in os.listdir(cwd):
@@ -42,4 +47,10 @@ for file in os.listdir(cwd):
             print(f"don't move this {file}")
         else:
             shutil.move((cwd + "/" + file), (cwd + "/memes/" + file))
+<<<<<<< HEAD
+=======
+            files_moved += 1
+
+print(f"Operation complete, {files_moved} dank memes and others sorted out.")
+>>>>>>> 5a5dab6 (added total operations done)
 
